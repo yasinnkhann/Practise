@@ -1,0 +1,12 @@
+function runningSum(arr) {
+    var result = [];
+    var sum = 0;
+    
+    for (var i in arr) {
+        sum += arr[i];
+        result.push(sum);
+    }
+    return result;
+}
+
+console.log(runningSum([1, 1, 1, 1])); // returns [1,2,3,4]
